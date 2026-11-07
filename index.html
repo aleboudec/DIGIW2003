@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digimon World 2003 — Solution, Digivolutions & Cartes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="circuit-bg"></div>
+  <div class="scanlines"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar">
+    <a href="#top" class="nav-logo">DW<span>2003</span></a>
+    <ul class="nav-links">
+      <li><a href="#solution">Solution</a></li>
+      <li><a href="#digivolutions">Digivolutions</a></li>
+      <li><a href="#cartes">Cartes</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="top" class="hero">
+    <div class="logo-wrapper">
+      <div class="logo-frame">
+        <h1 class="logo-digimon">DIGIMON</h1>
+        <h2 class="logo-world">DIGIMON WORLD</h2>
+        <h2 class="logo-year">2003</h2>
+      </div>
+    </div>
+    <p class="tagline">Le guide ultime : solution, digivolutions & cartes</p>
+  </header>
+
+  <!-- ============ 3 GRANDES BANNIÈRES ============ -->
+  <section class="banners">
+    <a href="#solution" class="banner banner-solution">
+      <span class="banner-icon">📖</span>
+      <span class="banner-text">
+        <span class="banner-title">SOLUTION DU JEU</span>
+        <span class="banner-sub">Walkthrough complet, donjons & boss</span>
+      </span>
+      <span class="banner-arrow">▶</span>
+    </a>
+
+    <a href="#digivolutions" class="banner banner-digivolution">
+      <span class="banner-icon">🧬</span>
+      <span class="banner-text">
+        <span class="banner-title">DIGIVOLUTIONS</span>
+        <span class="banner-sub">Arbres d'évolution & conditions</span>
+      </span>
+      <span class="banner-arrow">▶</span>
+    </a>
+
+    <a href="#cartes" class="banner banner-cartes">
+      <span class="banner-icon">🃏</span>
+      <span class="banner-text">
+        <span class="banner-title">CARTES</span>
+        <span class="banner-sub">Liste & effets de toutes les cartes</span>
+      </span>
+      <span class="banner-arrow">▶</span>
+    </a>
+  </section>
+
+  <!-- ============ SOLUTION ============ -->
+  <section id="solution" class="section">
+    <h2 class="section-title">> SOLUTION DU JEU</h2>
+
+    <div class="tabs" id="solutionTabs"></div>
+    <div class="pixel-box" id="solutionContent"></div>
+  </section>
+
+  <!-- ============ DIGIVOLUTIONS ============ -->
+  <section id="digivolutions" class="section">
+    <h2 class="section-title">> DIGIVOLUTIONS</h2>
+
+    <input type="text" id="digiSearch" class="pixel-input" placeholder="🔍 Rechercher un Digimon...">
+
+    <div class="filters" id="digiFilters"></div>
+    <div class="evo-list" id="evoList"></div>
+  </section>
+
+  <!-- ============ CARTES ============ -->
+  <section id="cartes" class="section">
+    <h2 class="section-title">> CARTES</h2>
+
+    <input type="text" id="cardSearch" class="pixel-input" placeholder="🔍 Rechercher une carte...">
+
+    <div class="filters" id="cardFilters"></div>
+    <div class="cards-grid" id="cardsGrid"></div>
+  </section>
+
+  <footer class="footer">
+    <p>Site de fan non officiel — Digimon © Bandai / Toei Animation / Akiyoshi Hongo</p>
+    <p class="blink-slow">▶ INSERT COIN ◀</p>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Haut de page">▲</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
